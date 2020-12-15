@@ -1,0 +1,34 @@
+{
+	"name": "evergreenphp/core",
+	"type": "project",
+	"description": "EvergreenPHP Core.",
+	"keywords": [
+		"framework",
+		"evergreen",
+		"evergreenphp"
+	],
+	"license": "MIT",
+	"require": {
+		"php": "^7.3|^8.0"
+	},
+	"require-dev": {
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"preferred-install": "dist",
+		"sort-packages": true
+	},
+	"autoload": {
+		"psr-4": {
+			"Evergreenphp\\Core\\": "src/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"evergreen": {
+			"providers": [
+				"Evergreenphp\\Core\\EvergreenCorePackageProvider"
+			]
+		}
+	}
+}
